@@ -9,11 +9,11 @@
 #include <sched.h>
 #include <errno.h>
 
-//#define TARGET_OFFSET 0x0UL
-//#define DEVMEM "./mem"
+#define TARGET_OFFSET 0x0UL
+#define DEVMEM "./mem"
 
-#define TARGET_OFFSET 0x200000000UL
-#define DEVMEM "/dev/mem"
+//#define TARGET_OFFSET 0x200000000UL
+//#define DEVMEM "/dev/mem"
 
 /* Shared pointers into the mmap'd page */
 static volatile uint64_t *shared_value;
